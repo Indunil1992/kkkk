@@ -1,0 +1,99 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "67d83850-25b2-4ec7-b8dd-871be601bc81": {
+        "id": "67d83850-25b2-4ec7-b8dd-871be601bc81",
+        "parent": null,
+        "name": "kkkk",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "95fbdc13-23ec-41b9-8003-63841c726552"
+        ],
+        "isRemovable": false,
+        "filePath": "kkkk"
+      },
+      "95fbdc13-23ec-41b9-8003-63841c726552": {
+        "id": "95fbdc13-23ec-41b9-8003-63841c726552",
+        "parent": "67d83850-25b2-4ec7-b8dd-871be601bc81",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kkkk/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "e874f936-d047-498d-8ae4-2d31f369b561": {
+        "id": "e874f936-d047-498d-8ae4-2d31f369b561",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.kkkkfunction = require(\"./kkkk/function.js\").handler;"
+      },
+      "de4407aa-bdb6-4b99-a6c3-6cd2d8bbd35d": {
+        "id": "de4407aa-bdb6-4b99-a6c3-6cd2d8bbd35d",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "67d83850-25b2-4ec7-b8dd-871be601bc81",
+    "openFiles": [
+      "95fbdc13-23ec-41b9-8003-63841c726552"
+    ],
+    "currentFileId": "95fbdc13-23ec-41b9-8003-63841c726552",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "kkkk",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1568621506166
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "kkkk",
+      "url": "https://github.com/Indunil1992/kkkk"
+    }
+  }
+}
